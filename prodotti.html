@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azienda Agricola Funghi Ecosostenibili - Prodotti</title>
+  <title>Azienda Agricola Funghi Ecosostenibili</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     html, body {
@@ -14,10 +14,14 @@
     body {
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
     }
 
     footer {
-      margin-top: auto;
       background-color: #343a40;
       color: white;
       text-align: center;
@@ -26,7 +30,7 @@
   </style>
 </head>
 <body>
-  <!-- Navbar (riutilizzata) -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Funghi Eco</a>
@@ -44,13 +48,13 @@
     </div>
   </nav>
 
-  <!-- Prodotti Section -->
-  <section class="container my-5">
+  <!-- Main Content -->
+  <main class="container my-5">
     <h2 class="text-center mb-5">I nostri Prodotti</h2>
     <div class="row">
       <div class="col-md-4">
         <div class="card">
-          <img src="portfolio-website\images\pioppini.webp" class="card-img-top" alt="Fungo 1">
+          <img src="\images\pioppini.webp" class="card-img-top" alt="Fungo 1">
           <div class="card-body">
             <h5 class="card-title">Fungi Pioppini</h5>
             <p class="card-text">Coltivato in modo ecosostenibile, perfetto per mix di funghi alla contadina.</p>
@@ -59,8 +63,7 @@
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="portfolio-website\images\plerotus
-          .webp" class="card-img-top" alt="Fungo 2">
+          <img src="\images\plerotus.webp" class="card-img-top" alt="Fungo 2">
           <div class="card-body">
             <h5 class="card-title">Fungo Pleurotus</h5>
             <p class="card-text">Una varietà versatile e nutriente, ideale per grigliate e stufati.</p>
@@ -69,10 +72,10 @@
       </div>
       <!-- Aggiungi altri prodotti -->
     </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-dark text-light text-center p-3 mt-5">
+  <footer class="bg-dark text-light text-center p-3">
     <p>Ragione Sociale: Azienda Agricola Funghi Eco | P.IVA: 12345678910 | Tel: +39 012 345 6789 | Email: info@funghieco.it</p>
   </footer>
 
